@@ -53,82 +53,221 @@ A continuación se explican las funcionalidades y posibles mejoras.
                 <li>Accessibility Best Practices</li> <!-- Proyecto ejemplo -->
             </ul>
         </section>
+  <header class="resources-header">
+    <h1>Classic and Modern Web Design Tools (2025)</h1>
+    <p>Reference Resource by [Your Name] · Web Atelier (UDIT)</p>
+  </header>
 
-        <nav class="resources-nav">
-<h3><a href="https://gohugo.io/" target="_blank">Hugo</a></h3>
-<div class="tool-info">
-<p><strong>Key features:</strong> Extremely fast builds, Markdown-based, no Node.js.</p>
-<p><strong>Use cases:</strong> Documentation and large static websites.</p>
-</div>
-<div class="personal-notes">
-<h4>Personal Notes</h4>
-<p>Hugo’s speed is amazing, especially for large multi-page documentation sites.</p>
-</div>
-</div>
-</div>
-</section>
+  <nav class="resources-nav">
+    <ul>
+      <li><a href="#css-frameworks">CSS Frameworks</a></li>
+      <li><a href="#ui-libraries">UI Libraries</a></li>
+      <li><a href="#static-generators">Static Site Generators</a></li>
+      <li><a href="#animation">Animation Libraries</a></li>
+      <li><a href="#templates">Templates</a></li>
+      <li><a href="#data-media">Data & Media Tools</a></li>
+      <li><a href="#reflection">Critical Reflection</a></li>
+    </ul>
+  </nav>
 
+  <main class="container">
 
-<!-- UI Libraries -->
-<section id="ui-libraries" class="tools-section">
-<h2>UI Libraries</h2>
-<div class="tools-grid">
-<div class="tool-card">
-<span class="runtime-badge nodejs">📦 Requires Node.js</span>
-<h3><a href="https://react.dev/" target="_blank">React</a></h3>
-<div class="tool-info">
-<p><strong>Key features:</strong> Component-based library for building UIs.</p>
-<p><strong>Use cases:</strong> SPAs, interactive dashboards.</p>
-</div>
-<div class="personal-notes">
-<h4>Personal Notes</h4>
-<p>React powers most modern interfaces I build, though setup requires Node.js.</p>
-</div>
-</div>
-</div>
-</section>
+    <!-- ====================== 1. CSS Frameworks ====================== -->
+    <section id="css-frameworks" class="tools-section">
+      <h2>CSS Frameworks</h2>
+      <div class="tools-grid">
 
+        <div class="tool-card">
+          <h3><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></h3>
+          <span class="runtime-badge standalone">🌐 No Node.js</span>
+          <div class="tool-info">
+            <p><strong>Key features:</strong> Responsive grid system, utilities, prebuilt components.</p>
+            <p><strong>Technology:</strong> CSS/SCSS, vanilla JavaScript.</p>
+            <p><strong>Learning curve:</strong> Beginner → Intermediate.</p>
+            <p><strong>Use cases:</strong> Quick prototyping and educational projects.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Note</h4>
+            <p>Bootstrap’s ease of use makes it ideal for learning responsive design and building prototypes fast.</p>
+          </div>
+        </div>
 
-<!-- SaaS Tools -->
-<section id="saas-tools" class="tools-section">
-<h2>SaaS Tools</h2>
-<div class="tools-grid">
-<div class="tool-card">
-<span class="runtime-badge saas">☁️ SaaS</span>
-<h3><a href="https://hygraph.com/" target="_blank">Hygraph</a></h3>
-<div class="tool-info">
-<p><strong>Key features:</strong> Headless CMS using GraphQL.</p>
-<p><strong>Use cases:</strong> Structured content for JAMstack projects.</p>
-</div>
-<div class="personal-notes">
-<h4>Personal Notes</h4>
-<p>Hygraph is an excellent choice for managing content through APIs.</p>
-</div>
-</div>
-</div>
-</section>
+        <div class="tool-card">
+          <h3><a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></h3>
+          <span class="runtime-badge nodejs">📦 Requires Node.js</span>
+          <div class="tool-info">
+            <p><strong>Key features:</strong> Utility-first CSS, design system building, JIT compiler.</p>
+            <p><strong>Technology:</strong> PostCSS, JavaScript build tools.</p>
+            <p><strong>Learning curve:</strong> Intermediate.</p>
+            <p><strong>Use cases:</strong> Custom design systems for professional projects.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Note</h4>
+            <p>Although the syntax is initially dense, Tailwind provides unmatched flexibility and scalability for design consistency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ====================== 2. UI Libraries ====================== -->
+    <section id="ui-libraries" class="tools-section">
+      <h2>UI Component Libraries</h2>
+      <div class="tools-grid">
 
-<!-- Reflection -->
-<section id="reflection" class="tools-section">
-<h2>Critical Reflection (ATELIER)</h2>
-<div class="personal-notes">
-<h4>Observe</h4>
-<p>I observed that modern web design relies heavily on Node.js for build tools, but many classic tools remain effective without it.</p>
+        <div class="tool-card">
+          <h3><a href="https://mui.com/" target="_blank">Material UI</a></h3>
+          <span class="runtime-badge nodejs">📦 Requires Node.js</span>
+          <div class="tool-info">
+            <p><strong>Key features:</strong> React components following Material Design.</p>
+            <p><strong>Technology:</strong> React + TypeScript.</p>
+            <p><strong>Learning curve:</strong> Intermediate → Advanced.</p>
+            <p><strong>Use cases:</strong> Enterprise dashboards and complex web apps.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Note</h4>
+            <p>Material UI accelerates React development and enforces visual coherence, but can feel opinionated in style.</p>
+          </div>
+        </div>
 
+        <div class="tool-card">
+          <h3><a href="https://ui.shadcn.com/" target="_blank">Shadcn UI</a></h3>
+          <span class="runtime-badge nodejs">📦 Requires Node.js</span>
+          <div class="tool-info">
+            <p><strong>Key features:</strong> Copy-paste React components using Tailwind and Radix primitives.</p>
+            <p><strong>Technology:</strong> React, TailwindCSS.</p>
+            <p><strong>Learning curve:</strong> Intermediate.</p>
+            <p><strong>Use cases:</strong> Portfolios, SaaS landing pages.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Note</h4>
+            <p>Perfect for modern, minimalist interfaces with full control over design tokens.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h4>Intervene</h4>
-<p>By organizing tools by runtime requirements, I clarified which technologies suit my workflow best.</p>
+    <!-- ====================== 3. Static Site Generators ====================== -->
+    <section id="static-generators" class="tools-section">
+      <h2>Static Site Generators</h2>
+      <div class="tools-grid">
 
+        <div class="tool-card">
+          <h3><a href="https://jekyllrb.com/" target="_blank">Jekyll</a></h3>
+          <span class="runtime-badge standalone">🟥 Requires Ruby</span>
+          <div class="tool-info">
+            <p><strong>Key features:</strong> Markdown + Liquid templates, GitHub Pages integration.</p>
+            <p><strong>Technology:</strong> Ruby, YAML.</p>
+            <p><strong>Learning curve:</strong> Beginner → Intermediate.</p>
+            <p><strong>Use cases:</strong> Blogs and portfolios.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Note</h4>
+            <p>Jekyll’s direct GitHub Pages support simplifies deployment for static content.</p>
+          </div>
+        </div>
 
-<h4>Reflect</h4>
-<p>Trade-offs exist between simplicity and flexibility. Tools like Tailwind and React offer control but depend on Node.js, while Bootstrap and Hugo simplify setup.</p>
+        <div class="tool-card">
+          <h3><a href="https://gohugo.io/" target="_blank">Hugo</a></h3>
+          <span class="runtime-badge standalone">🟢 Binary (No Node.js)</span>
+          <div class="tool-info">
+            <p><strong>Key features:</strong> Ultra-fast builds, single binary runtime.</p>
+            <p><strong>Technology:</strong> Go.</p>
+            <p><strong>Learning curve:</strong> Beginner → Intermediate.</p>
+            <p><strong>Use cases:</strong> Documentation and large websites.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Note</h4>
+            <p>Hugo’s simplicity and speed make it my preferred option for portfolio sites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ====================== 4. Animation ====================== -->
+    <section id="animation" class="tools-section">
+      <h2>Animation and Visual Libraries</h2>
+      <div class="tools-grid">
 
-<h4>Share</h4>
-<p>This resource helps me (and my peers) quickly choose web design tools based on project needs and runtime constraints.</p>
-</div>
-</section>
+        <div class="tool-card">
+          <h3><a href="https://greensock.com/gsap/" target="_blank">GSAP</a></h3>
+          <span class="runtime-badge standalone">🌐 No Node.js</span>
+          <div class="tool-info">
+            <p><strong>Key features:</strong> Timeline-based animations and scroll triggers.</p>
+            <p><strong>Technology:</strong> Vanilla JavaScript.</p>
+            <p><strong>Learning curve:</strong> Intermediate → Advanced.</p>
+            <p><strong>Use cases:</strong> Interactive storytelling and marketing sites.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Note</h4>
+            <p>GSAP is incredibly performant and versatile, ideal for advanced animation workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== 5. Templates ====================== -->
+    <section id="templates" class="tools-section">
+      <h2>Templates and Kits</h2>
+      <div class="tools-grid">
+
+        <div class="tool-card">
+          <h3><a href="https://html5up.net/" target="_blank">HTML5 UP</a></h3>
+          <span class="runtime-badge standalone">🌐 No Node.js</span>
+          <div class="tool-info">
+            <p><strong>Key features:</strong> Free responsive HTML/CSS templates.</p>
+            <p><strong>Technology:</strong> HTML5, CSS3.</p>
+            <p><strong>Learning curve:</strong> Beginner.</p>
+            <p><strong>Use cases:</strong> Student projects and static pages.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Note</h4>
+            <p>HTML5 UP templates are an excellent starting point for design customization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== 6. Data & Media ====================== -->
+    <section id="data-media" class="tools-section">
+      <h2>Data & Media Resources</h2>
+      <div class="tools-grid">
+
+        <div class="tool-card">
+          <h3><a href="https://imagekit.io/" target="_blank">ImageKit.io</a></h3>
+          <span class="runtime-badge saas">☁ SaaS</span>
+          <div class="tool-info">
+            <p><strong>Key features:</strong> Image CDN, optimization, and transformation.</p>
+            <p><strong>Technology:</strong> API + global CDN.</p>
+            <p><strong>Learning curve:</strong> Beginner.</p>
+            <p><strong>Use cases:</strong> Media optimization for fast websites.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Note</h4>
+            <p>Using ImageKit.io dramatically improves performance and image handling for visual-heavy projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CRITICAL REFLECTION ====================== -->
+    <section id="reflection" class="tools-section">
+      <h2>Critical Reflection</h2>
+      <div class="personal-notes">
+        <h4>ATELIER Reflection</h4>
+        <p>
+          Through this comparative exercise, I recognized how runtime environments (Node.js, Ruby, or standalone) shape both development flow and complexity.
+          Node.js tools like Tailwind and Shadcn offer flexibility and modularity but demand constant updates and dependency management.
+          Meanwhile, standalone solutions such as Bootstrap or Hugo promote simplicity and stability at the cost of some customization.
+        </p>
+        <p>
+          My preferred workflow balances speed and control: Hugo for structure, TailwindCSS for design systems, and GSAP for motion.
+          This combination reflects my value of <strong>minimal dependencies with maximum creative expression</strong>.
+        </p>
+        <p>
+          Ultimately, selecting tools isn’t just technical—it’s about aligning technology with design philosophy, maintainability, and long-term growth.
+        </p>
+      </div>
+    </section>
     </main>
     <!-- Pie de página: información legal y derechos de autor -->
     <footer>
