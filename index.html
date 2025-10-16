@@ -10,13 +10,17 @@ A continuación se explican las funcionalidades y posibles mejoras.
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsivo en dispositivos móviles -->
     <title>Advanced Web Design UDIT</title> <!-- Título que aparece en la pestaña del navegador -->
     <link rel="stylesheet" href="styles.css"> 
-    <link rel="stylesheet" href="resources.css">
-    <link rel="stylesheet" href="index.css"> <!-- Enlace a la hoja de estilos externa -->
+  <link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/resources.css"> <!-- Enlace a la hoja de estilos externa -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Cabecera: incluye el título del sitio y el menú de navegación principal -->
     <header>
-        <h1>Welcome to Advanced Web Design</h1> <!-- Encabezado principal de la página -->
+        
+        <center><h1>Advanced Web Design </center></h1> <!-- Encabezado principal de la página -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li> <!-- Enlace a la página principal -->
@@ -30,6 +34,7 @@ A continuación se explican las funcionalidades y posibles mejoras.
 
     
     <main>
+
         <!-- Sección de introducción al curso -->
         <section>
             <h2>Learn Modern Web Design</h2> <!-- Subtítulo de la sección -->
@@ -48,6 +53,82 @@ A continuación se explican las funcionalidades y posibles mejoras.
                 <li>Accessibility Best Practices</li> <!-- Proyecto ejemplo -->
             </ul>
         </section>
+
+        <nav class="resources-nav">
+<h3><a href="https://gohugo.io/" target="_blank">Hugo</a></h3>
+<div class="tool-info">
+<p><strong>Key features:</strong> Extremely fast builds, Markdown-based, no Node.js.</p>
+<p><strong>Use cases:</strong> Documentation and large static websites.</p>
+</div>
+<div class="personal-notes">
+<h4>Personal Notes</h4>
+<p>Hugo’s speed is amazing, especially for large multi-page documentation sites.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- UI Libraries -->
+<section id="ui-libraries" class="tools-section">
+<h2>UI Libraries</h2>
+<div class="tools-grid">
+<div class="tool-card">
+<span class="runtime-badge nodejs">📦 Requires Node.js</span>
+<h3><a href="https://react.dev/" target="_blank">React</a></h3>
+<div class="tool-info">
+<p><strong>Key features:</strong> Component-based library for building UIs.</p>
+<p><strong>Use cases:</strong> SPAs, interactive dashboards.</p>
+</div>
+<div class="personal-notes">
+<h4>Personal Notes</h4>
+<p>React powers most modern interfaces I build, though setup requires Node.js.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- SaaS Tools -->
+<section id="saas-tools" class="tools-section">
+<h2>SaaS Tools</h2>
+<div class="tools-grid">
+<div class="tool-card">
+<span class="runtime-badge saas">☁️ SaaS</span>
+<h3><a href="https://hygraph.com/" target="_blank">Hygraph</a></h3>
+<div class="tool-info">
+<p><strong>Key features:</strong> Headless CMS using GraphQL.</p>
+<p><strong>Use cases:</strong> Structured content for JAMstack projects.</p>
+</div>
+<div class="personal-notes">
+<h4>Personal Notes</h4>
+<p>Hygraph is an excellent choice for managing content through APIs.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Reflection -->
+<section id="reflection" class="tools-section">
+<h2>Critical Reflection (ATELIER)</h2>
+<div class="personal-notes">
+<h4>Observe</h4>
+<p>I observed that modern web design relies heavily on Node.js for build tools, but many classic tools remain effective without it.</p>
+
+
+<h4>Intervene</h4>
+<p>By organizing tools by runtime requirements, I clarified which technologies suit my workflow best.</p>
+
+
+<h4>Reflect</h4>
+<p>Trade-offs exist between simplicity and flexibility. Tools like Tailwind and React offer control but depend on Node.js, while Bootstrap and Hugo simplify setup.</p>
+
+
+<h4>Share</h4>
+<p>This resource helps me (and my peers) quickly choose web design tools based on project needs and runtime constraints.</p>
+</div>
+</section>
     </main>
     <!-- Pie de página: información legal y derechos de autor -->
     <footer>
